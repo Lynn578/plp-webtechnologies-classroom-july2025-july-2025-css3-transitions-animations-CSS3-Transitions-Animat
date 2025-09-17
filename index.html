@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & JavaScript Animation Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bringing Web Pages to Life with CSS & JavaScript</h1>
+        <p>A showcase of CSS animations and JavaScript interactivity</p>
+    </header>
+    
+    <main>
+        <!-- Part 1: CSS3 Transitions and Animations -->
+        <section id="part1">
+            <h2>Part 1: CSS3 Transitions and Animations</h2>
+            <p>These elements use pure CSS for animations and transitions.</p>
+            
+            <h3>Hover Transition</h3>
+            <p>Hover over the box to see a smooth transition:</p>
+            <div class="animation-container">
+                <div class="animated-element transition-box">Hover Me</div>
+            </div>
+            
+            <h3>Continuous Animations</h3>
+            <p>These animations run continuously using CSS keyframes:</p>
+            <div class="animation-container">
+                <div class="animated-element pulse">Pulse</div>
+                <div class="animated-element bounce">Bounce</div>
+                <div class="animated-element spin">Spin</div>
+            </div>
+        </section>
+        
+        <!-- Part 2: JavaScript Functions -->
+        <section id="part2">
+            <h2>Part 2: JavaScript Functions — Scope, Parameters & Return Values</h2>
+            <p>These examples demonstrate JavaScript functions with parameters, return values, and scope awareness.</p>
+            
+            <div class="control-panel">
+                <div class="control-group">
+                    <h3>Function Parameters</h3>
+                    <p>Enter two numbers to calculate:</p>
+                    <input type="number" id="num1" placeholder="Number 1" value="5">
+                    <input type="number" id="num2" placeholder="Number 2" value="3">
+                    <button class="btn" id="calculate-btn">Calculate Sum</button>
+                    <p id="result">Result will appear here</p>
+                </div>
+                
+                <div class="control-group">
+                    <h3>Scope Demonstration</h3>
+                    <p>This shows the difference between global and local scope:</p>
+                    <button class="btn" id="scope-demo-btn">Run Scope Demo</button>
+                    <p id="scope-demo">Scope demonstration results will appear here</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Part 3: Combining CSS Animations with JavaScript -->
+        <section id="part3">
+            <h2>Part 3: Combining CSS Animations with JavaScript</h2>
+            <p>These examples combine JavaScript functionality with CSS animations.</p>
+            
+            <div class="control-panel">
+                <div class="control-group">
+                    <h3>Card Flip Animation</h3>
+                    <p>Click the card to flip it:</p>
+                    <div class="card-container">
+                        <div class="card" id="flip-card">
+                            <div class="card-front">Front</div>
+                            <div class="card-back">Back</div>
+                        </div>
+                    </div>
+                    <button class="btn" id="flip-card-btn">Flip Card</button>
+                </div>
+                
+                <div class="control-group">
+                    <h3>Animation Controls</h3>
+                    <p>Control the animation with JavaScript:</p>
+                    <button class="btn" id="start-animation-btn">Start Animation</button>
+                    <button class="btn" id="stop-animation-btn">Stop Animation</button>
+                    <button class="btn" id="toggle-animation-btn">Toggle Animation</button>
+                    <div class="animated-element" id="js-controlled">Hello!</div>
+                </div>
+                
+                <div class="control-group">
+                    <h3>Modal Popup</h3>
+                    <p>Click the button to open a modal with animation:</p>
+                    <button class="btn" id="open-modal-btn">Open Modal</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Modal -->
+    <div class="modal" id="demo-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal-btn">&times;</span>
+            <h2>Animated Modal</h2>
+            <p>This modal uses a combination of CSS transitions and JavaScript to create a smooth opening and closing effect.</p>
+            <p>Notice how it fades in and slides up when opening, and does the reverse when closing.</p>
+            <button class="btn" id="modal-close-btn">Close</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
